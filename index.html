@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- External FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Basic Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             color: #333;
             margin: 0;
@@ -15,17 +22,21 @@
             background-color: #f9f9f9;
         }
         header {
-            background: #2c3e50;
-            color: #fff;
+            background: #2c6b39;
+            color: #ffffff;
             padding: 10px 20px;
             text-align: center;
         }
-        h1, h2 {
+        h1 {
+            color: #ecf0f1;
+        }
+        h2 {
             color: #2c3e50;
+
         }
         section {
             padding: 20px;
-            margin: 0 auto;
+            margin: 20px auto;
             max-width: 800px;
             background: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -33,25 +44,77 @@
         }
         ul {
             list-style-type: square;
+            padding-left: 20px;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background: #2c3e50;
+            background: #2c6b39;
+            color: #ffffff;
+        }
+        /* Centered Content */
+        .center-content {
+            text-align: center;
+            margin-top: 30px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .name-title {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        /* Contact Section */
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .contact i {
+            color: #333;
+            margin-right: 8px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        /* Button */
+        .achievements-button {
+            display: inline-block;
+            margin-top: 20px;
+            background: #2c6b39;
             color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Jen's Portfolio</h1>
         <p>Welcome to my personal achievements and skills showcase.</p>
-<img src="your-image.jpg" alt="Jennie Mae Olila Giango" style="width:150px; border-radius:50%;">
-
     </header>
 
+    <!-- Profile Section -->
+    <div class="center-content">
+        <img src="your-image-link.jpg" alt="Your Profile Photo">
+        <h2 class="name-title">Jennie Mae Olila Giango</h2>
+    </div>
+
+    <!-- About Me Section -->
     <section>
-        <h2>About Me</h2>
+       <h2>About Me</h2>
 <p>
   Hello! I’m Jennie Mae O. Giango, a driven individual with a proven track record of excellence in academics, leadership, and problem-solving.  
   My journey, from excelling in math challenges to graduating <strong>cum laude</strong> in civil engineering, is a testament to my adaptability, determination, and ability to learn quickly.  
@@ -59,13 +122,13 @@
   One of my proudest achievements is passing the Master Plumber Licensure Exam, where I came very close to topping the rankings—an accomplishment that reflects my commitment and dedication.  
   While my academic background is rooted in engineering, my passion lies in exploring new challenges, leveraging my skills in any field I venture into.
 </p>
+    </section>
 
-<h2>Achievements and Experiences</h2>
-<p>
-  Over the years, I have honed my skills through diverse experiences:
-</p>
-<ul>
-  <li><strong>Academic Excellence:</strong>  
+    <!-- Achievements Section -->
+    <section>
+        <h2>Achievements and Experiences</h2>
+        <ul>
+            <li><strong>Academic Excellence:</strong>  
     <ul>
       <li>Graduated <strong>cum laude</strong> in Civil Engineering at Visayas State University-Baybay.</li>
       <li><strong>DOST-SEI Merit Scholar</strong> for 4 years, maintaining high academic performance.</li>
@@ -73,7 +136,7 @@
   </li>
   <li><strong>Early Academic Achievements:</strong>  
     <ul>
-      <li>Salutatorian graduate at Merida Central School (Elementary).</li>
+      <li>Salutatorian graduate at <strong>Merida Central School</strong> (Elementary).</li>
       <li>Valedictorian graduate at <strong>Merida Vocational School</strong> (Junior High School).</li>
       <li>Graduated with High Honors under the STEM strand at <strong>Ormoc City Senior High School</strong> (Senior High School).</li>
     </ul>
@@ -86,17 +149,19 @@
     </ul>
   </li>
   <li><strong>Master Plumber Licensure:</strong> Passed the Master Plumber Licensure Exam with near-top performance in July 2024, showcasing my dedication and expertise.</li>
-</ul>
+        </ul>
+
 <p>
   These experiences reflect my resilience, discipline, and ability to excel in academic and leadership pursuits.
 </p>
 
-<h2>Skills and Strengths</h2>
-<p>
-  The following skills and traits have been instrumental in my achievements and are highly transferable across various roles:
-</p>
-<ul>
-  <li><strong>Tech-Savvy and Adaptable:</strong>  
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills and Strengths</h2>
+        <ul>
+            <li><strong>Tech-Savvy and Adaptable:</strong>  
     I effectively and efficiently use technology to achieve my goals. Whether it's creating <strong>creative projects and academic activities</strong>, managing <strong>communications</strong>, or exploring tools to improve my skills, I leverage technology to excel.  
     I also apply my tech skills in my everyday life—arranging <strong>plane tickets, sea travel bookings, hotel reservations, and online appointments</strong> with precision. My ability to follow instructions meticulously and execute them ensures I achieve the <strong>best possible results</strong> in everything I do.</li>
   <li><strong>Thorough Decision-Making:</strong>  
@@ -106,38 +171,30 @@
   <li><strong>Leadership and Collaboration:</strong> Demonstrated through years of student leadership and team-based activities.</li>
   <li><strong>Resourcefulness:</strong> Utilizing technology and available tools to solve problems efficiently, enhance productivity, and learn new knowledge or skills online.</li>
   <li><strong>Resilience and Excellence:</strong> Aiming for the highest standards in both academics and day-to-day tasks.</li>
-</ul>
+        </ul>
 <p>
   My ability to combine technical skills, disciplined decision-making, and attention to detail has been key to my successes, from academic excellence to effectively managing personal and professional tasks.
 </p>
-
-
-
-<h2>Let’s Work Together</h2>
-<p>
-  I am eager to bring my skills and enthusiasm to new opportunities. Whether it's problem-solving, collaborating with teams, or tackling creative challenges,  
-  I am ready to contribute and learn. Let's connect and explore how I can add value to your team!
-</p>
     </section>
 
-<section>
-    <h2>Contact Information</h2>
-    <p>Email: jenniemae.giango00@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jennie-mae-giango-a9212a339" target="_blank">linkedin.com/in/jennie-mae-giango-a9212a339</a></p>
-    <p>Phone: +63 907 844 4792</p>
-</section>
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <p><i class="fas fa-envelope"></i> jenniemae.giango00@gmail.com</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/jennie-mae-giango-a9212a339" target="_blank">linkedin.com/in/jennie-mae-giango-a9212a339</a></p>
+            <p><i class="fas fa-phone"></i> +63 907 844 4792</p>
+        </div>
+    </section>
 
+    <!-- Call to Action Button -->
+    <div class="center-content">
+        <a href="#achievements" class="achievements-button">See My Achievements</a>
+    </div>
 
-<a href="#achievements" style="background:#3498db; color:#fff; padding:10px 15px; text-decoration:none; border-radius:5px;">See My Achievements</a>
-
+    <!-- Footer -->
     <footer>
         <p>© 2024 My Portfolio | All Rights Reserved</p>
     </footer>
 </body>
 </html>
-
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style>
-    body { font-family: 'Open Sans', sans-serif; }
-</style>
-
